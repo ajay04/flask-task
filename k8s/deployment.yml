@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: flask-task
-          image: ajay365/flask-task
+          image: 961401541269.dkr.ecr.ap-south-1.amazonaws.com/flask-task
           ports:
             - containerPort: 5000

@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: flask-cluster-ip-service
 spec:
-  # type: NodePort
+  type: LoadBalancer
   selector:
     component: web
   ports:
