@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: web
+  template:
+    metadata:
+      labels:
+        component: web
+    spec:
+      containers:
+        - name: flask-task
+          image: ajay365/flask-task
+          ports:
+            - containerPort: 5000
