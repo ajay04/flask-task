@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: my-docker-login
+data:
+  .dockerconfigjson:
+type: kubernetes.io/dockerconfigjson
+
+
+
+# https://stackoverflow.com/questions/36232906/how-to-access-private-docker-hub-repository-from-kubernetes-on-vagrant

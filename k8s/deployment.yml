@@ -12,8 +12,10 @@ spec:
       labels:
         component: web
     spec:
+      imagePullSecrets:
+        - name: docker-ligin
       containers:
         - name: flask-task
-          image: 961401541269.dkr.ecr.ap-south-1.amazonaws.com/flask-task
+          image: ajay365/my-app:3
           ports:
             - containerPort: 5000
